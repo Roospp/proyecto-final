@@ -1,0 +1,8 @@
+.container-tienda{
+    display: flex;
+    background-image: url(/src/assets/img/Home2.jpg);
+    width: 100vw;
+    height: 100vh;
+}
+
+

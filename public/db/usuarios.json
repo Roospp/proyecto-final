@@ -1,0 +1,23 @@
+[
+    {
+        "dni": "React App",
+        "email": "Create React App Sample",
+        "nombre": ".",
+        "apellido": "standalone",
+        "pass": "#000000"
+    },
+    {
+        "dni": "26703190-8",
+        "email": "erikxp",
+        "nombre": ".",
+        "apellido": "standalone",
+        "pass": "#000000"
+    },
+    {
+        "dni": "26703190a-8",
+        "email": "erikxp",
+        "nombre": ".",
+        "apellido": "standalone",
+        "pass": "#000000"
+    }
+]

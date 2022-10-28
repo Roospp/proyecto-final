@@ -1,0 +1,20 @@
+{
+    "productos": [
+        {
+            "codigo": "React App",
+            "dni": "React App",
+            "nombre": "Create React App Sample",
+            "precio": ".",
+            "descripcion": "standalone",
+            "cantidad": "#000000"
+        },
+        {
+            "codigo": "React App",
+            "dni": "React App",
+            "nombre": "Create React App Sample",
+            "precio": ".",
+            "descripcion": "standalone",
+            "cantidad": "#000000"
+        }
+    ]
+}
