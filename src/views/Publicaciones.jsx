@@ -2,7 +2,9 @@ import React from 'react'
 
 const Publicaciones = () => {
   return (
-    <div>Publicaciones</div>
+    <div className='publicaciones-container'>
+      <div className='text-publicaciones'>Publicaciones</div>
+    </div>
   )
 }
 

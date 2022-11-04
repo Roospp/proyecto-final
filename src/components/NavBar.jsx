@@ -13,8 +13,7 @@ export default function NaBvar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="text-container ">
-          <NavLink to='/iniciarSesion' className="nav-link active text-nabvar">Iniciar Sesion</NavLink>
-          <NavLink to='/registrarse' className="nav-link active text-nabvar">Registrarse</NavLink>
+          <NavLink to='/login' className="nav-link active text-nabvar">Login</NavLink>
           <NavLink to='/tienda' className="nav-link active text-nabvar">Tienda</NavLink>
           <NavLink to='/perfil' className="nav-link active text-nabvar">Perfil</NavLink>
           <NavLink to='/Favoritos' className="nav-link active text-nabvar">Favoritos</NavLink>

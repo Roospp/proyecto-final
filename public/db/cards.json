@@ -1,0 +1,20 @@
+[
+    {
+        "tittle": "Farcry",
+        "precio": "30.000",
+        "descripcion": ".",
+        "img": "."
+    },
+    {
+        "tittle": "Battlefield 1",
+        "precio": "30.000",
+        "descripcion": ".",
+        "img": "."
+    },
+    {
+        "tittle": "React App",
+        "precio": "Create React App Sample",
+        "descripcion": ".",
+        "img": "."
+    }
+]

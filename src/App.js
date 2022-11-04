@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Context from "./Context";
@@ -8,11 +9,23 @@ import DetalleProducto from "./views/DetalleProducto";
 import Perfil from "./views/Perfil";
 import Favoritos from "./views/Favoritos";
 import Publicaciones from "./views/Publicaciones";
-import Registrarse from "./components/Registrarse"
+import Login from "./components/Login";
 
-
+import firebaseApp from './credenciales'
+import {getAuth, onAuthStateChanged} from 'firebase/auth'
+const auth = getAuth(firebaseApp)
 
 function App() {
+  const [usuario, setUsuario] = useState(null)
+
+  onAuthStateChanged(auth, (usuarioFirebase)=>{
+    if(usuarioFirebase){
+      setUsuario(usuarioFirebase)
+    }
+    else{
+      setUsuario(null)
+    }
+  })
   return (
     <div className="App">
      <Context.Provider value={{}}>
@@ -22,7 +35,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/home" element={<Home/>} />
           <Route path="/tienda" element={<Tienda/>} />
-          <Route path="/Registrarse" element={<Registrarse/>} />
+          <Route path="/login" element={<Login/>} />
           <Route path="/detalleProducto" element={<DetalleProducto/>} />
           <Route path="/perfil" element={<Perfil/>} />
           <Route path="/favoritos" element={<Favoritos/>} />
