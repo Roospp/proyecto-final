@@ -10,6 +10,7 @@ import Perfil from "./views/Perfil";
 import Favoritos from "./views/Favoritos";
 import Publicaciones from "./views/Publicaciones";
 import Login from "./components/Login";
+import Formulario from "./components/Formulario";
 
 import { firebaseApp } from "./services/firebase";
 import {getAuth, onAuthStateChanged} from 'firebase/auth'
