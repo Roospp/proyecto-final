@@ -55,7 +55,7 @@ const Login = () => {
               
               
               //saveUsuario('usuarios/','Rooses','Pintos','rs@r.com')
-              //updateUsuario('usuarios/', '-NG4zT0XmMc9Iaz8hyA4', 'Erik','Perez','erikxp@gmail.com')
+              //updateUsuario('usuarios/', '-NG4zT0XmMc9Iaz8hyA4', 'Jos','zack','zoca@gmail.com')
               getData('usuarios/-NG4zT0XmMc9Iaz8hyA4')
               // ...
             })
