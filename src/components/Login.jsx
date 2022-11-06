@@ -52,11 +52,11 @@ const Login = () => {
             .then((userCredential) => {
               // Signed in 
               const user = userCredential.user;
-              
+              console.log(user)
               
               //saveUsuario('usuarios/','Rooses','Pintos','rs@r.com')
               //updateUsuario('usuarios/', '-NG4zT0XmMc9Iaz8hyA4', 'Jos','zack','zoca@gmail.com')
-              getData('usuarios/-NG4zT0XmMc9Iaz8hyA4')
+              //getData('usuarios/-NG4zT0XmMc9Iaz8hyA4')
               // ...
             })
             .catch((error) => {
