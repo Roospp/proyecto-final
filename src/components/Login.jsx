@@ -18,7 +18,15 @@ var handleDeleteClick = () => {
   deleteRef('productos/','-NG7jdp4WsEC7f5t_eqJ');
 };
 
-
+var handleCreateClick = () => {
+  let data = {
+    desc: 'Prueba Domingo',
+    nombre: 'Prueba Domingo',
+    precio: 1000,
+    vendedor: 'erikxp@gmail.com'
+  };
+  ProductosDataService.create(data);
+};
 
 
 const Login = () => {
@@ -61,7 +69,7 @@ const Login = () => {
                 desc: 'Prueba',
                 nombre: 'Prueba',
                 precio: 1000,
-                vendedor: 'Prueba'
+                vendedor: 'erikxp@gmail.com'
               };
               console.log('Entre')
               ProductosDataService.create(data) */
@@ -92,6 +100,9 @@ const Login = () => {
   
     <button title="delete" aria-label="delete" onClick={handleDeleteClick}>
         Delete field
+      </button>
+      <button title="create" aria-label="create" onClick={handleCreateClick}>
+        Crear Producto
       </button>
           <div className=" mt-5 ms-5">
             <h2 className='text-login '>{registrando ? "Registrate" : "Inicia sesión"}</h2>

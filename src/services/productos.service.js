@@ -4,37 +4,13 @@ import { firebaseApp } from "../services/firebase";
 // initialise database
 const db = getDatabase(firebaseApp);
 
-const refs = ref(db,"/productos");
+const refs = ref(db,"/favoritos");
 
-class ProductosDataService {
-    getAll() {
-        let productos = [];
-        onValue(refs, (snapshot) => {  
-             snapshot.forEach(function(childSnapshot) {
-                var key = childSnapshot.key;
-                var data = childSnapshot.val();
-                
-                productos.push({
-                    key: key,
-                    desc: data.desc,
-                    nombre: data.nombre,
-                    precio: data.precio,
-                    vendedor: data.vendedor,
-                  });
-
-                
-                // ...
-              }
-              
-              ); 
-              
-              console.log(productos)
-          });
-    }
+class FavoritosDataService {
   
-    create(producto) {
-        return push(refs, producto);
+    create(favotiro) {
+        return push(refs, favotiro);
     }
 }
 
-export default new ProductosDataService();
+export default new FavoritosDataService();
