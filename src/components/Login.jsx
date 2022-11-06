@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { deleteRef, saveUsuario, updateUsuario, getData} from "../helpers/database";
 
-
+import ProductosDataService from "../services/productos.service";
 
 
 import { firebaseApp } from "../services/firebase";
@@ -15,8 +15,9 @@ const database = getDatabase();
 const auth = getAuth(firebaseApp)
 
 var handleDeleteClick = () => {
-  deleteRef('usuarios/','-NG4z__m0I6FhJaGJwhM');
+  deleteRef('productos/','-NG7jdp4WsEC7f5t_eqJ');
 };
+
 
 
 
@@ -52,11 +53,24 @@ const Login = () => {
             .then((userCredential) => {
               // Signed in 
               const user = userCredential.user;
-              console.log(user)
               
+              
+              ///console.log(ProductosDataService.getAll())
+
+              /* let data = {
+                desc: 'Prueba',
+                nombre: 'Prueba',
+                precio: 1000,
+                vendedor: 'Prueba'
+              };
+              console.log('Entre')
+              ProductosDataService.create(data) */
+
+
+
               //saveUsuario('usuarios/','Rooses','Pintos','rs@r.com')
               //updateUsuario('usuarios/', '-NG4zT0XmMc9Iaz8hyA4', 'Jos','zack','zoca@gmail.com')
-              //getData('usuarios/-NG4zT0XmMc9Iaz8hyA4')
+              getData()
               // ...
             })
             .catch((error) => {
@@ -75,6 +89,7 @@ const Login = () => {
   return (
     <div className='login-container'>
     <div className="col-md-4 ">
+  
     <button title="delete" aria-label="delete" onClick={handleDeleteClick}>
         Delete field
       </button>

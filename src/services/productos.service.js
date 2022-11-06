@@ -4,39 +4,12 @@ import { firebaseApp } from "../services/firebase";
 // initialise database
 const db = getDatabase(firebaseApp);
 
+const refs = ref(db,"/productos");
 
-
- export const deleteRef = (tabla, id) => {
-    console.log(remove(ref(db, tabla+id)));
-  }
-
-
-  export const saveUsuario = (tabla, nombre, apellido, email) => {
-    console.log(push(ref(db, tabla), {
-        nombre: nombre,
-        apellido: apellido,
-        email : email
-      }));
-    
-  }
-
-  export const updateUsuario = (tabla, id, nombre, apellido, email) => {
-    set(ref(db, tabla+id), {
-        nombre: nombre,
-        apellido: apellido,
-        email : email
-      })
-      console.log("Actualizo");
-    
-  }
-
-  // read operation with observer
-export const getData = () => {
-  // Get a database reference to our posts
-
-
-  let productos = [];
-        onValue(ref(db, 'productos/'), (snapshot) => {  
+class ProductosDataService {
+    getAll() {
+        let productos = [];
+        onValue(refs, (snapshot) => {  
              snapshot.forEach(function(childSnapshot) {
                 var key = childSnapshot.key;
                 var data = childSnapshot.val();
@@ -57,6 +30,11 @@ export const getData = () => {
               
               console.log(productos)
           });
-  };
-
+    }
   
+    create(producto) {
+        return push(refs, producto);
+    }
+}
+
+export default new ProductosDataService();
