@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProductosDataService from "../services/productos.service";
-import FavoritosDataService from "../services/favorito.service";
+import FavoritosDataService from "../services/favoritos.service";
 import { getDatabase, onValue, set, ref, remove, push, get, child } from "firebase/database";
 import { firebaseApp } from "../services/firebase";
 import Card from 'react-bootstrap/Card';
@@ -9,7 +9,25 @@ import Button from 'react-bootstrap/Button';
 const db = getDatabase(firebaseApp);
 let array = [];
 
+var handleFavoritoClick = (producto, email) => {
+    let data = {
+      producto: 'Sonic',
+      email: 'erikxp@gmail.com',
+    };
+    FavoritosDataService.create(data);
+  }; 
 
+  var handleDeleteFavoritoClick = () => {
+    FavoritosDataService.delete('-NGDIGFTnCnTnYxo460o');
+  };
+
+  var handleCheckClick = () => {
+    let data = {
+        producto: 'Sonic',
+        email: 'erikxp@gmail.com',
+      };
+    FavoritosDataService.exist(data);
+  };
 
 export default class ListProductos extends Component {
     constructor(props){
@@ -60,7 +78,12 @@ export default class ListProductos extends Component {
                 Precio: $ {producto.precio}
                 </Card.Text>
                 <Button variant="primary">Comprar</Button>
-           
+                <br/>
+                <Button variant="primary" onClick={handleFavoritoClick('Call of duttty','erikxp@gmail.com')}>Agregar Favorito</Button>
+                <br/>
+                <Button variant="primary" onClick={handleDeleteFavoritoClick}>Eliminar Favorito</Button>
+                <br/>
+                <Button variant="primary" onClick={handleCheckClick}>Check</Button>
                 </Card.Body>
                 </Card>
             </div>

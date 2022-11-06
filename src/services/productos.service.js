@@ -1,16 +1,21 @@
 import { getDatabase, onValue, set, ref, remove, push, get, child } from "firebase/database";
-import { firebaseApp } from "../services/firebase";
+import { firebaseApp } from "./firebase";
 
 // initialise database
 const db = getDatabase(firebaseApp);
 
-const refs = ref(db,"/favoritos");
+const refs = ref(db,"/productos");
 
-class FavoritosDataService {
+class ProductosDataService {
   
-    create(favotiro) {
-        return push(refs, favotiro);
+    create(producto) {
+        console.log('Creando')
+       return push(ref(db,"/productos"), producto);
+    }
+
+    delete(id){
+        remove(ref(db,"/productos/"+id));
     }
 }
 
-export default new FavoritosDataService();
+export default new ProductosDataService();

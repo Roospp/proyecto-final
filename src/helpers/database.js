@@ -17,7 +17,6 @@ const db = getDatabase(firebaseApp);
         apellido: apellido,
         email : email
       }));
-    
   }
 
   export const updateUsuario = (tabla, id, nombre, apellido, email) => {

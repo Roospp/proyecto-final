@@ -15,18 +15,18 @@ const database = getDatabase();
 const auth = getAuth(firebaseApp)
 
 var handleDeleteClick = () => {
-  deleteRef('productos/','-NG7jdp4WsEC7f5t_eqJ');
+  ProductosDataService.delete('-NGDFs6yGMYXR45rd4Sc');
 };
 
-var handleCreateClick = () => {
+ var handleCreateClick = () => {
   let data = {
-    desc: 'Prueba Domingo',
-    nombre: 'Prueba Domingo',
-    precio: 1000,
+    desc: 'Sonic',
+    nombre: 'Sonic',
+    precio: 5000,
     vendedor: 'erikxp@gmail.com'
   };
   ProductosDataService.create(data);
-};
+}; 
 
 
 const Login = () => {
@@ -65,7 +65,7 @@ const Login = () => {
               
               ///console.log(ProductosDataService.getAll())
 
-              /* let data = {
+              /* const data = {
                 desc: 'Prueba',
                 nombre: 'Prueba',
                 precio: 1000,
@@ -76,9 +76,9 @@ const Login = () => {
 
 
 
-              //saveUsuario('usuarios/','Rooses','Pintos','rs@r.com')
+              saveUsuario('usuarios/','Rooses','Pintos','rs@r.com')
               //updateUsuario('usuarios/', '-NG4zT0XmMc9Iaz8hyA4', 'Jos','zack','zoca@gmail.com')
-              getData()
+              //getData()
               // ...
             })
             .catch((error) => {
@@ -101,7 +101,7 @@ const Login = () => {
     <button title="delete" aria-label="delete" onClick={handleDeleteClick}>
         Delete field
       </button>
-      <button title="create" aria-label="create" onClick={handleCreateClick}>
+      <button title="crear" aria-label="crear" onClick={handleCreateClick}>
         Crear Producto
       </button>
           <div className=" mt-5 ms-5">

@@ -10,6 +10,7 @@ import './assets/css/perfil.css'
 import './assets/css/favoritos.css'
 import './assets/css/publicaciones.css'
 import './assets/css/formulario.css'
+import './assets/css/formularioProducto.css'
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
