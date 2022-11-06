@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { deleteRef, saveUsuario, updateUsuario, getData} from "../helpers/database";
 
-
+import ProductosDataService from "../services/productos.service";
 
 
 import { firebaseApp } from "../services/firebase";
@@ -15,9 +15,18 @@ const database = getDatabase();
 const auth = getAuth(firebaseApp)
 
 var handleDeleteClick = () => {
-  deleteRef('usuarios/','-NG4z__m0I6FhJaGJwhM');
+  ProductosDataService.delete('-NGDFs6yGMYXR45rd4Sc');
 };
 
+ var handleCreateClick = () => {
+  let data = {
+    desc: 'Sonic',
+    nombre: 'Sonic',
+    precio: 5000,
+    vendedor: 'erikxp@gmail.com'
+  };
+  ProductosDataService.create(data);
+}; 
 
 
 const Login = () => {
@@ -54,9 +63,22 @@ const Login = () => {
               const user = userCredential.user;
               
               
-              //saveUsuario('usuarios/','Rooses','Pintos','rs@r.com')
+              ///console.log(ProductosDataService.getAll())
+
+              /* const data = {
+                desc: 'Prueba',
+                nombre: 'Prueba',
+                precio: 1000,
+                vendedor: 'erikxp@gmail.com'
+              };
+              console.log('Entre')
+              ProductosDataService.create(data) */
+
+
+
+              saveUsuario('usuarios/','Rooses','Pintos','rs@r.com')
               //updateUsuario('usuarios/', '-NG4zT0XmMc9Iaz8hyA4', 'Jos','zack','zoca@gmail.com')
-              getData('usuarios/-NG4zT0XmMc9Iaz8hyA4')
+              //getData()
               // ...
             })
             .catch((error) => {
@@ -75,8 +97,12 @@ const Login = () => {
   return (
     <div className='login-container'>
     <div className="col-md-4 ">
+  
     <button title="delete" aria-label="delete" onClick={handleDeleteClick}>
         Delete field
+      </button>
+      <button title="crear" aria-label="crear" onClick={handleCreateClick}>
+        Crear Producto
       </button>
           <div className=" mt-5 ms-5">
             <h2 className='text-login '>{registrando ? "Registrate" : "Inicia sesión"}</h2>

@@ -18,6 +18,7 @@ export default function NaBvar() {
           <NavLink to='/perfil' className="nav-link active text-nabvar">Perfil</NavLink>
           <NavLink to='/Favoritos' className="nav-link active text-nabvar">Favoritos</NavLink>
           <NavLink to='/publicaciones' className="nav-link active text-nabvar">Publicaciones</NavLink>
+          <NavLink to='/productos' className="nav-link active text-nabvar">Productos</NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -10,14 +10,20 @@ import Perfil from "./views/Perfil";
 import Favoritos from "./views/Favoritos";
 import Publicaciones from "./views/Publicaciones";
 import Login from "./components/Login";
-import Formulario from "./components/Formulario";
+import Formulario from "./components/FormularioUsuario";
 
 import { firebaseApp } from "./services/firebase";
 import {getAuth, onAuthStateChanged} from 'firebase/auth'
+
+import TutorialsList from "./components/ListProductos";
+import ListProductos from './components/ListProductos';
+
 const auth = getAuth(firebaseApp)
 
 function App() {
   const [usuario, setUsuario] = useState(null)
+
+  const [productos, setProductos] = useState(null)
 
   onAuthStateChanged(auth, (usuarioFirebase)=>{
     if(usuarioFirebase){
@@ -41,6 +47,7 @@ function App() {
           <Route path="/perfil" element={<Perfil/>} />
           <Route path="/favoritos" element={<Favoritos/>} />
           <Route path="/publicaciones" element={<Publicaciones/>} />
+          <Route path="/productos" element={<ListProductos/>} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
       </BrowserRouter>

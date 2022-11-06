@@ -7,20 +7,16 @@ const db = getDatabase(firebaseApp);
 
 
  export const deleteRef = (tabla, id) => {
-    remove(ref(db, tabla+id)).then(() => {
-      console.log("location removedddddddd");
-    });
+    console.log(remove(ref(db, tabla+id)));
   }
 
 
   export const saveUsuario = (tabla, nombre, apellido, email) => {
-    push(ref(db, tabla), {
+    console.log(push(ref(db, tabla), {
         nombre: nombre,
         apellido: apellido,
         email : email
-      })
-      console.log("Guardo");
-    
+      }));
   }
 
   export const updateUsuario = (tabla, id, nombre, apellido, email) => {
@@ -34,10 +30,32 @@ const db = getDatabase(firebaseApp);
   }
 
   // read operation with observer
-export const getData = (tabla) => {
-    get(child(ref(db, tabla))).then((snapshot)=>{
-        console.log(snapshot)
-    })
+export const getData = () => {
+  // Get a database reference to our posts
+
+
+  let productos = [];
+        onValue(ref(db, 'productos/'), (snapshot) => {  
+             snapshot.forEach(function(childSnapshot) {
+                var key = childSnapshot.key;
+                var data = childSnapshot.val();
+                
+                productos.push({
+                    key: key,
+                    desc: data.desc,
+                    nombre: data.nombre,
+                    precio: data.precio,
+                    vendedor: data.vendedor,
+                  });
+
+                
+                // ...
+              }
+              
+              ); 
+              
+              console.log(productos)
+          });
   };
 
   
