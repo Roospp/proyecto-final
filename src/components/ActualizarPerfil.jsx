@@ -1,30 +1,60 @@
-import React from 'react'
+import React, { useState, useEffect,useContext } from 'react'
+import { Context } from '../context/Context'
 
 const ActualizarPerfil = () => {
+    const c = useContext(Context);
+
+
+    const handlerActualizar = async(e)=>{
+        e.preventDefault();
+        
+          c.setUser([...c.user.map((o) =>
+            o.id === c.sign.email ? { ...o,
+                email: e.target.emailActualizar.value, 
+                nombre:e.target.nombreActualizar.value,
+                apellido:e.target.apellidoActualizar.value,
+                password:e.target.passwordActualizar.value } : o
+          ),
+        ]);
+        
+        const u = {
+            id:e.target.emailActualizar.value,
+            email:e.target.emailActualizar.value,
+            nombre:e.target.nombreActualizar.value,
+            apellido:e.target.apellidoActualizar.value,
+            password:e.target.passwordActualizar.value
+        }
+        c.setSign(u)
+          
+    }
+    
+  
+   
+    
   return (
     <div className='actualizar-container'>
 
-    <form className='form-actualizar'  >
+    <form className='form-actualizar' onSubmit={handlerActualizar} >
 
     <div className='form-group col-20'> 
         <label htmlFor='full_name_id' className='control-label '></label>
-        <input type='text' className='form-control' id='nombreActualizar' name='full_name' placeholder='Nombre' required />
+        <input type='text' className='form-control' id='nombreActualizar' name='full_name' placeholder='Nombre' defaultValue={c.sign.nombre} required />
     </div>    
 
     <div className="form-group col-20"> 
         <label htmlFor='street1_id' className='control-label '></label>
-        <input type='text' className='form-control' id='apellidoActualizar' name='street1' placeholder='Apellido' required />
+        <input type='text' className='form-control' id='apellidoActualizar' name='street1' placeholder='Apellido' defaultValue={c.sign.apellido} required />
     </div>                    
                             
     <div className='form-group col-20'> 
         <label htmlFor='street2_id' className='control-label '></label>
-        <input type='email' className='form-control' id='emailActualizar' name='street2' placeholder='Email' required />
+        <input type='email' className='form-control' id='emailActualizar' name='street2' placeholder='Email' defaultValue={c.sign.email} required />
     </div>    
 
     
     <div className='form-group col-20'> 
         <label htmlFor='zip_id' className='control-label'></label>
-        <input type='text' className='form-control' id='passwordActualizar' name='zip' placeholder='Password' required/>
+        <input type='text' className='form-control' id='passwordActualizar' name='zip' placeholder='Password' defaultValue={c.sign.password} required/>
     </div>        
     
     <div className='form-group'> 
