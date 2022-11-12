@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "email": "1",
+        "nombre": "Gta",
+        "precio": "15.000",
+        "descripcion": "Lorem Ipsu",
+        "img": "https://i.postimg.cc/441PyzDv/gta.jpg"
+    },
+    {
+        "id": "2",
+        "email": "1",
+        "nombre": "Gta",
+        "precio": "15.000",
+        "descripcion": "Lorem Ipsu",
+        "img": "https://i.postimg.cc/441PyzDv/gta.jpg"
+    }
+    
+   
+]
