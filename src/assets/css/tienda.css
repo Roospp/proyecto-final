@@ -6,3 +6,8 @@
 }
 
 
+.container-cards {
+    overflow-y: scroll;
+    height: 95%;
+	width: 100%;
+}

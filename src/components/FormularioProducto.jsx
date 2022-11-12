@@ -4,7 +4,6 @@ const FormularioProducto = () => {
   return (
     
         <div className='form-producto-container'>
-    <h2 className='text-producto'>Productos</h2>
         <form className='form-container'>
 
 <div className='form-group'> 

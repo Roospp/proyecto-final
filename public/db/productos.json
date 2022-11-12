@@ -1,20 +1,48 @@
-{
-    "productos": [
+[
         {
-            "codigo": "React App",
-            "dni": "React App",
-            "nombre": "Create React App Sample",
-            "precio": ".",
-            "descripcion": "standalone",
-            "cantidad": "#000000"
+            "id": "1",
+            "nombre": "Gta",
+            "precio": "15.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/441PyzDv/gta.jpg"
         },
         {
-            "codigo": "React App",
-            "dni": "React App",
-            "nombre": "Create React App Sample",
-            "precio": ".",
-            "descripcion": "standalone",
-            "cantidad": "#000000"
+            "id": "2",
+            "nombre": "Farcry",
+            "precio": "10.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/mDBZrf9S/farcry.jpg"
+        }
+        ,
+        {
+            "id": "3",
+            "nombre": "Watch Dog",
+            "precio": "5.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/PJfmYRgW/watch.jpg"
+        }
+        ,
+        {
+            "id": "4",
+            "nombre": "Battlefield 1",
+            "precio": "17.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/mg17YM55/bf1.jpg"
+        }
+        ,
+        {
+            "id": "5",
+            "nombre": "Doom",
+            "precio": "20.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/rmj4V9DK/doom.jpg"
+        }
+        ,
+        {
+            "id": "6",
+            "nombre": "Cyberpunk",
+            "precio": "25.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/4dstR0ND/cybarpunk.jpg"
         }
     ]
-}
