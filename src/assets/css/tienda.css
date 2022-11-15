@@ -1,13 +1,9 @@
 .container-tienda{
-    display: flex;
     background-image: url(/src/assets/img/Home2.jpg);
     width: 100vw;
-    height: 100vh;
+    min-height: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 
-.container-cards {
-    overflow-y: scroll;
-    height: 95%;
-	width: 100%;
-}

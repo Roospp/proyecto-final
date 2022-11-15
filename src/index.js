@@ -12,7 +12,7 @@ import './assets/css/publicaciones.css'
 import './assets/css/formularioProducto.css'
 import './assets/css/registro.css'
 import './assets/css/actualizarperfil.css'
-import './assets/css/boton.css'
+import './assets/css/botonInicio.css'
 import './assets/css/botoncards.css'
 import App from './App';
 

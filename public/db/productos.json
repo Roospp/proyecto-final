@@ -4,45 +4,184 @@
             "nombre": "Gta",
             "precio": "15.000",
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/441PyzDv/gta.jpg"
+            "img": "https://i.postimg.cc/441PyzDv/gta.jpg",
+            "liked": false
         },
         {
             "id": "2",
             "nombre": "Farcry",
             "precio": "10.000",
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/mDBZrf9S/farcry.jpg"
-        }
-        ,
+            "img": "https://i.postimg.cc/mDBZrf9S/farcry.jpg",
+            "liked": false
+        },
         {
             "id": "3",
             "nombre": "Watch Dog",
             "precio": "5.000",
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/PJfmYRgW/watch.jpg"
-        }
-        ,
+            "img": "https://i.postimg.cc/PJfmYRgW/watch.jpg",
+            "liked": false
+        },
         {
             "id": "4",
-            "nombre": "Battlefield 1",
+            "nombre": "Batt 1",
             "precio": "17.000",
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/mg17YM55/bf1.jpg"
-        }
-        ,
+            "img": "https://i.postimg.cc/mg17YM55/bf1.jpg",
+            "liked": false
+        },
         {
             "id": "5",
             "nombre": "Doom",
             "precio": "20.000",
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/rmj4V9DK/doom.jpg"
-        }
-        ,
+            "img": "https://i.postimg.cc/rmj4V9DK/doom.jpg",
+            "liked": false
+        },
         {
             "id": "6",
-            "nombre": "Cyberpunk",
+            "nombre": "Cyber",
             "precio": "25.000",
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/4dstR0ND/cybarpunk.jpg"
+        },
+        {
+            "id": "7",
+            "nombre": "Dark Souls",
+            "precio": "19.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/8zhKw0q0/Dark.jpg"
+        },
+        {
+            "id": "8",
+            "nombre": "Guardianes",
+            "precio": "10.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/cJhDG817/Guardianes.jpg",
+            "liked": false
+        },
+        {
+            "id": "9",
+            "nombre": "Medium",
+            "precio": "5.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/0jMZSWYZ/Medium.jpg",
+            "liked": false
+        },
+        {
+            "id": "10",
+            "nombre": "Mortal Kombat",
+            "precio": "17.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/wvb078m7/Mortal.jpg",
+            "liked": false
+        },
+        {
+            "id": "11",
+            "nombre": "Prey",
+            "precio": "20.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/wMC2QXFz/Prey.jpg",
+            "liked": false
+        },
+        {
+            "id": "12",
+            "nombre": "Rust",
+            "precio": "25.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/0QNVk2rT/Rust.jpg"
+        },  {
+            "id": "13",
+            "nombre": "Gta",
+            "precio": "15.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/441PyzDv/gta.jpg"
+        },
+        {
+            "id": "14",
+            "nombre": "Farcry",
+            "precio": "10.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/mDBZrf9S/farcry.jpg",
+            "liked": false
+        },
+        {
+            "id": "15",
+            "nombre": "Watch Dog",
+            "precio": "5.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/PJfmYRgW/watch.jpg",
+            "liked": false
+        },
+        {
+            "id": "16",
+            "nombre": "Batt 1",
+            "precio": "17.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/mg17YM55/bf1.jpg",
+            "liked": false
+        },
+        {
+            "id": "17",
+            "nombre": "Doom",
+            "precio": "20.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/rmj4V9DK/doom.jpg",
+            "liked": false
+        },
+        {
+            "id": "18",
+            "nombre": "Cyber",
+            "precio": "25.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/4dstR0ND/cybarpunk.jpg"
+        },
+        {
+            "id": "19",
+            "nombre": "Dark Souls",
+            "precio": "19.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/8zhKw0q0/Dark.jpg"
+        },
+        {
+            "id": "20",
+            "nombre": "Guardianes",
+            "precio": "10.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/cJhDG817/Guardianes.jpg",
+            "liked": false
+        },
+        {
+            "id": "21",
+            "nombre": "Medium",
+            "precio": "5.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/0jMZSWYZ/Medium.jpg",
+            "liked": false
+        },
+        {
+            "id": "22",
+            "nombre": "Mortal Kombat",
+            "precio": "17.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/wvb078m7/Mortal.jpg",
+            "liked": false
+        },
+        {
+            "id": "23",
+            "nombre": "Prey",
+            "precio": "20.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/wMC2QXFz/Prey.jpg",
+            "liked": false
+        },
+        {
+            "id": "24",
+            "nombre": "Rust",
+            "precio": "25.000",
+            "descripcion": "Lorem Ipsu",
+            "img": "https://i.postimg.cc/0QNVk2rT/Rust.jpg",
+            "liked": false
         }
     ]
