@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useContext,} from 'react'
+import React, { useEffect,useContext,} from 'react'
 import { Context } from '../context/Context';
 
 
@@ -9,7 +9,6 @@ const Registrarse = () => {
     const {usuariosData, setUsuariosData} = useContext(Context);
 
    
-    const [sign, setSign] = useState();
 
     const endpoint = "../db/usuarios.json";
     

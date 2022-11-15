@@ -1,12 +1,25 @@
-import { useContext, useState, useNavigate, useEffect } from "react"
+import React,{ useContext, useState, useEffect } from "react"
 import { Context } from "../context/Context";
 import Heart from "../components/Heart";
+import { useNavigate } from 'react-router-dom'
 
 const Favoritos = () => {
   const c = useContext(Context);
   let data = c.productsFavoritos
   
+  const navigate = useNavigate();
 
+  const fetchData = async () => {
+    {c.sign.email?(
+      <div></div>
+    ):(
+      navigate("/iniciarSesion")
+    )}
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div className='favoritos-container'>
       <div className="nombre-usuario">
