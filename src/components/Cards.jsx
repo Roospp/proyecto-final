@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Context } from '../context/Context'
 import Heart from "./Heart";
+import DetalleProducto from '../views/DetalleProducto';
 
 const Cards = () => {
   const c = useContext(Context);
@@ -45,7 +46,7 @@ const Cards = () => {
               <div className='botones-card'>
               <Heart className='iconos' liked={p.liked} foto={p} />
               <i className="fa-regular fa-credit-card icono-pagar"></i>
-              <i className="fa-solid fa-circle-info icono-Info"></i>
+              <i className="fa-solid fa-circle-info icono-Info" onClick={DetalleProducto}></i>
               </div>
      
             </div>

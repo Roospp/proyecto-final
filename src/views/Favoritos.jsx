@@ -1,11 +1,12 @@
-import { useContext, useState } from "react"
+import { useContext, useState, useNavigate, useEffect } from "react"
 import { Context } from "../context/Context";
 import Heart from "../components/Heart";
 
 const Favoritos = () => {
   const c = useContext(Context);
   let data = c.productsFavoritos
-  console.log(data)
+  
+
   return (
     <div className='favoritos-container'>
       <div className="nombre-usuario">

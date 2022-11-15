@@ -6,7 +6,7 @@
   }
 
   .text-nabvar {
-    color: white;
+    color: white !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,6 @@
     padding: 10px;
     border: none;
     font: normal 48px/normal "Warnes", Helvetica, sans-serif;
-    color: rgba(255, 255, 255, 1);
     text-decoration: normal;
     text-align: center;
     -o-text-overflow: clip;

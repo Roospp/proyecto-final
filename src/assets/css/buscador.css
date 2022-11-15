@@ -1,9 +1,9 @@
 .container-buscador-option {
 display: flex;
-margin-top: 20px;
 justify-content: center;
 align-items: center;
 color: #fff;
+margin-bottom: 20px;
 }
 
 

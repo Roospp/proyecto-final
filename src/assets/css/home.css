@@ -1,8 +1,5 @@
 .home-container {
-    background-image: url(/src/assets/img/Home2.jpg);
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
+    display: flex;
 
 }
 
@@ -17,7 +14,6 @@ h1 {
     box-sizing: border-box;
     padding: 10px;
     border: none;
-    font: normal 48px/normal "Warnes", Helvetica, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-decoration: normal;
     text-align: center;
@@ -38,9 +34,3 @@ h1:hover {
 }
  
 
-@media screen and (max-width: 400px) {
-h1
-{
-    font-size: calc(1.2rem + 1.3vw) !important;
-}
-}
