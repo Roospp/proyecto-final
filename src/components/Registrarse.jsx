@@ -33,6 +33,7 @@ const Registrarse = () => {
         const password = e.target.passwordRegistrar.value;
         const nombre = e.target.nombreRegistrar.value;
         const apellido = e.target.apellidoRegistrar.value;
+        const img = e.target.fotoRegistrar.value;
         
         const data = {
             "usuarios": [{
@@ -40,6 +41,7 @@ const Registrarse = () => {
                 'nombre':nombre,
                 'apellido':apellido,
                 'password':password,
+                'img':img,
             }]
         }
   
@@ -86,6 +88,10 @@ const Registrarse = () => {
         <label htmlFor='zip_id' className='control-label'></label>
         <input type='text' className='form-control' id='passwordRegistrar' name='zip' placeholder='Password' required/>
     </div>        
+    <div className='form-group col-4'> 
+        <label htmlFor='zip_id' className='control-label'></label>
+        <input type='url' className='form-control' id='fotoRegistrar' name='zip' placeholder='Url foto' required/>
+    </div>   
     
     <div className='form-group'> 
     <button type="submit" className="buttonCSS">

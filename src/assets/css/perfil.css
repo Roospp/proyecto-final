@@ -14,7 +14,6 @@
     box-sizing: border-box;
     padding: 10px;
     border: none;
-    font: normal 48px/normal "Warnes", Helvetica, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-decoration: normal;
     text-align: center;
@@ -34,12 +33,16 @@
 
 
 .nombre-usuario {
+    font-size:4vw !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
     color: white;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: none;
-    font: normal 48px/normal "Warnes", Helvetica, sans-serif;
     color: rgba(255, 255, 255, 1);
     text-decoration: normal;
     text-align: center;
@@ -61,6 +64,11 @@
 .container-act-perfil {
 display: flex;
 justify-content: space-around;
+flex-wrap: wrap;
 }
 
 
+.foto-perfil {
+    width: 300px;
+    height: 400px;
+}

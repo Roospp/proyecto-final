@@ -1,13 +1,19 @@
-import React, { useState, useEffect,useContext } from 'react'
+import React, { useContext,useEffect } from 'react'
 import { Context } from '../context/Context'
+import Carusel from '../components/Carusel'
+
+
+
+
+
 const Home = () => {
   const c = useContext(Context)
 
-
   return (
     <div className='home-container'>
-      <h1>Hola {c.sign.nombre} {c.sign.apellido} Bienvenido a Roos Games!</h1>
-    </div>
+      <h1 className='d-block w-100'>Hola <span>{c.sign.nombre} {c.sign.apellido} </span>Bienvenido  a  Roos  Games!</h1>
+      <Carusel/>
+    </div> 
   )
 }
 

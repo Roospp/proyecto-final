@@ -1,6 +1,6 @@
 .home-container {
     display: flex;
-
+flex-direction: column;
 }
 
 .home-container,
@@ -34,3 +34,6 @@ h1:hover {
 }
  
 
+h1 {
+    font-size:4vw !important;
+}

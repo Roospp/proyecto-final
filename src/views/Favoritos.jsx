@@ -23,6 +23,7 @@ const Favoritos = () => {
             
               <h5 className='card-title'>{p.nombre}</h5>
               <p className='card-text'>{p.descripcion}</p>
+              <p className='card-text'>$ {p.precio}</p>
               <div className='botones-card'>
               <Heart className='iconos' liked={p.liked} foto={p} />
               <i className="fa-regular fa-credit-card icono-pagar"></i>

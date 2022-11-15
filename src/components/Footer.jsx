@@ -45,11 +45,7 @@ const Footer = () => {
                             role="button"
                             data-mdb-ripple-color="dark"
                         ><i className="fab fa-github icon-footer" /></a>
-            
-
-                            <div className="text-center text-white p-3" >
                               © 2020 Copyright: RoosPP Company
-                             </div>
 
             </footer>
             </div>

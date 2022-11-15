@@ -1,23 +1,26 @@
 [
         {
-            "id": "desafiolatam@gmail.com",
-            "email": "desafiolatam@gmail.com",
-            "nombre": "Desafio",
-            "apellido": "Latam",
-            "password": "12345"
+            "id": "Roosevelt@gmail.com",
+            "email": "Roosevelt@gmail.com",
+            "nombre": "Roosevelt",
+            "apellido": "Perez",
+            "password": "12345",
+            "img": "https://i.postimg.cc/T1f68ZNt/rana.jpg"
         },
         {
             "id": "Jose@gmail.com",
             "email": "Jose@gmail.com",
             "nombre": "Jose",
             "apellido": "Hernandez",
-            "password": "12345"
+            "password": "12345",
+            "img": "https://i.postimg.cc/T1f68ZNt/rana.jpg"
         },
         {
             "id": "Silvia@gmail.com",
             "email": "Silvia@gmail.com",
             "nombre": "Silvia",
             "apellido": "Fernandez",
-            "password": "12345"
+            "password": "12345",
+            "img": "https://i.postimg.cc/T1f68ZNt/rana.jpg"
         }
     ]
