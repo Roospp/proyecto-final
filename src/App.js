@@ -15,10 +15,7 @@ import ContextProvider from "./context/Context";
 
 
 function App() {
-  const [usuariosData, setUsuariosData] = useState([]);
-  const [sign, setSign] = useState([]);
-  const [cardsData, setCardsData] = useState([]);
-  
+ 
   return (
     <div className="App">
       <ContextProvider>

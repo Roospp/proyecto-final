@@ -21,3 +21,27 @@
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
+
+.botones-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icono-pagar {
+  font-size: 28px;
+
+}
+  
+.icono-pagar:hover {
+  color: #3e8e41;
+}
+
+.icono-Info {
+  font-size: 28px;
+ 
+}
+
+.icono-Info:hover {
+  color: #0DCAF0;
+}
