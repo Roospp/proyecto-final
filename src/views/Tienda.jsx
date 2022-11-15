@@ -1,9 +1,8 @@
-import React, { Children, createContext,useEffect,useState, useContext } from "react";  
+import React, { useEffect, useContext } from "react";  
 import Cards from '../components/Cards'
 import { Context } from "../context/Context";
 import { useNavigate } from "react-router-dom";
 import BuscadorYordenar from "../components/BuscarYordenar";
-import Footer from "../components/Footer";
 
 
 const Tienda = () => {

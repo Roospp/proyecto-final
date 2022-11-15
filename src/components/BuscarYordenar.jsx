@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, {  useContext } from 'react'
 import { Context } from "../context/Context";
 
 const Buscador = () => {
@@ -28,7 +28,7 @@ const Buscador = () => {
           <input type="text" className='input-search' placeholder="Buscador por nombres" onChange={filtrarProductos} value={c.busqueda} />
         </div>
       </div>
-      <div className='select ' tabindex='1'>
+      <div className='select ' tabIndex='1'>
         <input className='selectopt input' name="test" type="radio" id="opt1" />
         <label htmlFor="opt1" className="option">Ordenar por</label>
         <input className="selectopt input" name="test" type="radio" id="opt2" />
