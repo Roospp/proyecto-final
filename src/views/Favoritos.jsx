@@ -9,7 +9,7 @@ const Favoritos = () => {
   return (
     <div className='favoritos-container'>
       <div className="nombre-usuario">
-      <p>Favoritos de Usuario {c.sign.nombre}</p>
+      <p>Favoritos de {c.sign.nombre}</p>
     
     </div>
         <div className='container-cards '>
@@ -22,13 +22,11 @@ const Favoritos = () => {
             
               <h5 className='card-title'>{p.nombre}</h5>
               <p className='card-text'>{p.descripcion}</p>
-              <Heart liked={p.liked} foto={p} />
-              <button className='button-cards'>
-                Comprar
-              </button>
-              <button className='button-cards'>
-                Detalle
-              </button>
+              <div className='botones-card'>
+              <Heart className='iconos' liked={p.liked} foto={p} />
+              <i className="fa-regular fa-credit-card icono-pagar"></i>
+              <i className="fa-solid fa-circle-info icono-Info"></i>
+              </div>
             </div>
           </div>
         )

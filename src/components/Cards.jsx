@@ -41,14 +41,12 @@ const Cards = () => {
             
               <h5 className='card-title'>{p.nombre}</h5>
               <p className='card-text'>{p.descripcion}</p>
-              <p className='card-text'>{p.precio}</p>
-              <Heart liked={p.liked} foto={p} />
-              <button className='button-cards'>
-                Comprar
-              </button>
-              <button className='button-cards'>
-                Detalle
-              </button>
+              <p className='card-text'>$ {p.precio}</p>
+              <div className='botones-card'>
+              <Heart className='iconos' liked={p.liked} foto={p} />
+              <i className="fa-regular fa-credit-card icono-pagar"></i>
+              <i className="fa-solid fa-circle-info icono-Info"></i>
+              </div>
      
             </div>
           </div>
