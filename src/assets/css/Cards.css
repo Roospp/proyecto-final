@@ -1,9 +1,9 @@
 .container-cards {
-  overflow-y: scroll;
-  margin-top: 50px;
+  overflow-y:scroll !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 770px;
 }
 
 .individual-cards {

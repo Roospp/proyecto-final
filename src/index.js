@@ -14,6 +14,7 @@ import './assets/css/registro.css'
 import './assets/css/actualizarperfil.css'
 import './assets/css/botonInicio.css'
 import './assets/css/botoncards.css'
+import './assets/css/buscador.css'
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
