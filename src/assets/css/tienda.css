@@ -1,7 +1,4 @@
 .container-tienda{
-    background-image: url(/src/assets/img/Home2.jpg);
-    width: 100vw;
-    min-height: 100vw !important;
     display: flex;
     flex-direction: column;
 }

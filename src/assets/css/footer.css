@@ -1,0 +1,13 @@
+.container-footer {
+    background-color: transparent !important;
+    align-items: flex-end;
+    
+}
+
+.footer {
+    align-items: flex-end;
+}
+
+.icon-footer {
+    color: white !important;
+}

@@ -6,14 +6,12 @@ import { Context } from '../context/Context'
 const IniciarSesion = () => {
   const c = useContext(Context);
 
-  console.log(c.user)
   const navigate = useNavigate();
   
     const handlerSubmit = async(e)=>{
         e.preventDefault();
         const correo = e.target.email.value;
         const password = e.target.password.value;
-        console.log(c.user.usuarios)
         const found = c.user?.find((ingresar) => ingresar.email === correo && ingresar.password === password);
         if(found){
             c.setSign(found)
@@ -28,7 +26,7 @@ const IniciarSesion = () => {
   return (
     <div className='iniciarSesion-container'>
    
-            <h2 className='text-iniciarSesion '>Inicia Sesion</h2>
+            <h2 className='text-iniciarSesion '>Iniciar Sesion</h2>
             <form className=" form-iniciarSesion" onSubmit={handlerSubmit}>
 
               <div className="form-group col-4">

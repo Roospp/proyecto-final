@@ -7,17 +7,17 @@ const FormularioProducto = () => {
         <form className='form-container'>
 
 <div className='form-group'> 
-    <label for='full_name_id' className='control-label '></label>
+    <label htmlFor='full_name_id' className='control-label '></label>
     <input type='text' className='form-control' id='nombre' name='name' placeholder='Nombre'/>
 </div>    
 
 <div className='form-group'> 
-    <label for='street1_id' className='control-label '></label>
+    <label htmlFor='street1_id' className='control-label '></label>
     <input type='number' className='form-control' id='apellido' name='street1' placeholder='precio'/>
 </div>                    
                         
 <div className='form-group'> 
-    <label for='street2_id' className='control-label '></label>
+    <label htmlFor='street2_id' className='control-label '></label>
     <input type='text' className='form-control' id='email' name='street2' placeholder='descripcion'/>
 </div>    
 

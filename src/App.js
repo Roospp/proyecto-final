@@ -11,6 +11,7 @@ import Publicaciones from "./views/Publicaciones";
 import IniciarSesion from "./components/IniciarSesion";
 import Registrarse from "./components/Registrarse";
 import ContextProvider from "./context/Context";
+import Footer from './components/Footer';
 
 
 
@@ -24,8 +25,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/home" element={<Home/>} />
-          <Route path="/Iniciarsesion" element={<IniciarSesion/>} />
-          <Route path="/Registrarse" element={<Registrarse/>} />
+          <Route path="/iniciarsesion" element={<IniciarSesion/>} />
+          <Route path="/registrarse" element={<Registrarse/>} />
           <Route path="/perfil" element={<Perfil/>} />
           <Route path="/tienda" element={<Tienda/>} />
           <Route path="/detalleProducto" element={<DetalleProducto/>} />
@@ -33,6 +34,7 @@ function App() {
           <Route path="/publicaciones" element={<Publicaciones/>} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
       </ContextProvider>
     </div>

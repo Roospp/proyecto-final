@@ -28,8 +28,8 @@ const Buscador = () => {
           <input type="text" className='input-search' placeholder="Buscador por nombres" onChange={filtrarProductos} value={c.busqueda} />
         </div>
       </div>
-      <div className='select ' tabindex="1">
-        <input className='selectopt input' name="test" type="radio" id="opt1" checked />
+      <div className='select ' tabindex='1'>
+        <input className='selectopt input' name="test" type="radio" id="opt1" />
         <label htmlFor="opt1" className="option">Ordenar por</label>
         <input className="selectopt input" name="test" type="radio" id="opt2" />
         <label htmlFor="opt2" className="option">Nombre</label>
