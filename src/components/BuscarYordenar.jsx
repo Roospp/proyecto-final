@@ -24,7 +24,7 @@ const Buscador = () => {
     <div className='container-buscador-option'>
       <div className='buscador'>
         <div className='search-box'>
-          <button className='btn-search'><i className='fas fa-search'></i></button>
+          <button className='btn-search'><i className=' icon-color fa-solid fa-magnifying-glass'></i></button>
           <input type="text" className='input-search' placeholder="Buscador por nombres" onChange={filtrarProductos} value={c.busqueda} />
         </div>
       </div>

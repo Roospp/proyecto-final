@@ -22,12 +22,12 @@ const Perfil = () => {
   
   return (
     <div className='perfil-container'>
-      <h2 className='text-perfil'>Mi perfil</h2>
       <div className='container-act-perfil'>
+      <img className='foto-perfil' src={c.sign.img} alt="" />
       <div className='nombre-usuario'>
-    <p>Nombre: {c.sign.nombre}</p>
-    <p>Apellido: {c.sign.apellido}</p>
-    <p>Email: {c.sign.email}</p>
+    <p>{c.sign.nombre}</p>
+    <p>{c.sign.apellido}</p>
+    <p>{c.sign.email}</p>
 </div>
 <div className='actualizar-container'>
       <ActualizarPerfil />

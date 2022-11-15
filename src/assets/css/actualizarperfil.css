@@ -11,7 +11,11 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 25px;
+        gap: 10px;
+        width: 500px;
     }
+
+
+    
 
    

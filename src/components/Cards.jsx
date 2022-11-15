@@ -30,17 +30,17 @@ const Cards = () => {
 
   return (
     
-    <div className='container-cards '>
+    <div className='container-cards'>
       
-    {
+      {
       
       
-      data.map((p) => (
-          <div className='individual-cards card' key={p.id}>
+       data.map((p) => (
+          <div className='individual-cards card fondo-card ' key={p.id}>
             <div className='card-body'>
-            <img  src={p.img} className='foto-card' alt="..." />
+              <img  src={p.img} className='foto-card' alt="..." />
             
-              <h5 className='card-title'>{p.nombre}</h5>
+              <h5 className='card-title card-text'>{p.nombre}</h5>
               <p className='card-text'>{p.descripcion}</p>
               <p className='card-text'>$ {p.precio}</p>
               <div className='botones-card'>

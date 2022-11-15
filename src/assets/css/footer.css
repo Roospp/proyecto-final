@@ -1,11 +1,15 @@
 .container-footer {
+    display: flex;
     background-color: transparent !important;
-    align-items: flex-end;
+    backdrop-filter: blur(10px) !important;
+    background-color: rgba(8, 8, 8, 0.651) !important;
+    flex-direction: column;
+    
     
 }
 
 .footer {
-    align-items: flex-end;
+    color: white;
 }
 
 .icon-footer {

@@ -10,7 +10,8 @@ export default function NaBvar() {
 
 
   return (
-    <Navbar collapseOnSelect expand="lg"   className="container-nabvar">
+    <div className="navbar-color">
+    <Navbar collapseOnSelect expand="lg" >
        <NavLink to='/' className="nav-link active">
         <img src={logo} alt="logo" className="logo" />
         </NavLink>
@@ -36,6 +37,7 @@ export default function NaBvar() {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+    </div>
   );
 }
   

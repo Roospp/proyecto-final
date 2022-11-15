@@ -16,6 +16,7 @@ import './assets/css/botonInicio.css'
 import './assets/css/botoncards.css'
 import './assets/css/buscador.css'
 import './assets/css/footer.css'
+import './assets/css/carusel.css'
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -10,6 +10,7 @@ body {
   overflow-x:hidden;
   overflow-y: hidden;
   
+  
 }
 
 code {
@@ -29,6 +30,9 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  backdrop-filter: blur(10px) !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  
 }
 
 
