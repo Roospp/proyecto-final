@@ -6,7 +6,7 @@ const Home = () => {
 
   return (
     <div className='home-container'>
-      <h1>Hola {c.sign.nombre} Bienvenido a Roos Games!</h1>
+      <h1>Hola {c.sign.nombre} {c.sign.apellido} Bienvenido a Roos Games!</h1>
     </div>
   )
 }

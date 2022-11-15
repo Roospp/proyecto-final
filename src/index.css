@@ -6,9 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x:hidden;
-  overflow-y:hidden;
   
+  overflow-x:hidden;
+  overflow-y: hidden;
   
 }
 
@@ -23,7 +23,7 @@ code {
 .App {
   font-family: sans-serif;
   text-align: center;
-  
+ 
 }
 
 

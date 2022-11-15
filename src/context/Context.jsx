@@ -8,8 +8,9 @@ export default function ContextProvider({children}){
     const [sign, setSign] = useState([])
     const [filterresult, setFilterresult] = useState([]);
     const [busqueda, setBusqueda] = useState("");
-
-
+    const [productsFavoritos, setProductsFavoritos] = useState([])
+  
+    
     const fetchData = async () => {
         const response = await fetch("../db/usuarios.json");
         let u = await response.json();
@@ -21,7 +22,7 @@ export default function ContextProvider({children}){
     }, []);
     
     return(
-        <Context.Provider value={{user, setUser, products, setProducts, sign, setSign, filterresult, setFilterresult, busqueda, setBusqueda}}>
+        <Context.Provider value={{user, setUser, products, setProducts, sign, setSign, filterresult, setFilterresult, busqueda, setBusqueda, productsFavoritos, setProductsFavoritos}}>
             {children}
         </Context.Provider>
     )
