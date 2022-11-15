@@ -1,7 +1,7 @@
 .buttonCSS {
     margin-top: 20px;
     display: inline-block;
-    padding: 15px 25px;
+    padding: 10px 15px;
     font-size: 24px;
     cursor: pointer;
     text-align: center;	
@@ -20,4 +20,11 @@
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+  }
+
+
+  .button-favoritos {
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
   }

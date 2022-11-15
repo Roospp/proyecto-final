@@ -1,12 +1,12 @@
-import React, { useState, useEffect,useContext, navigate,} from 'react'
-import UsuariosContext from "../context/UsuariosContext"
+import React, { useState, useEffect,useContext,} from 'react'
+import { Context } from '../context/Context';
 
 
 
 
 
 const Registrarse = () => {
-    const {usuariosData, setUsuariosData} = useContext(UsuariosContext);
+    const {usuariosData, setUsuariosData} = useContext(Context);
 
    
     const [sign, setSign] = useState();

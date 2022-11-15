@@ -10,9 +10,6 @@ import Favoritos from "./views/Favoritos";
 import Publicaciones from "./views/Publicaciones";
 import IniciarSesion from "./components/IniciarSesion";
 import Registrarse from "./components/Registrarse";
-import UsuariosContext from "../src/context/UsuariosContext"
-import RegistroUsuarioContext from "../src/context/RegistroUsuarioContext"
-import CardsContext from "../src/context/CardsContext"
 import ContextProvider from "./context/Context";
 
 
@@ -25,9 +22,6 @@ function App() {
   return (
     <div className="App">
       <ContextProvider>
-     <UsuariosContext.Provider value={{usuariosData, setUsuariosData}}>
-     <RegistroUsuarioContext.Provider value={{sign, setSign}}>
-     <CardsContext.Provider value={{cardsData, setCardsData}}>
       <BrowserRouter>
       <NavBar/>
         <Routes>
@@ -43,9 +37,6 @@ function App() {
           <Route path="*" element={<NotFound/>} />
         </Routes>
       </BrowserRouter>
-      </CardsContext.Provider>
-      </RegistroUsuarioContext.Provider>
-      </UsuariosContext.Provider>
       </ContextProvider>
     </div>
   );
