@@ -28,7 +28,6 @@ const IniciarSesion = () => {
    
             <h2 className='text-iniciarSesion '>Iniciar Sesion</h2>
             <form className=" form-iniciarSesion" onSubmit={handlerSubmit}>
-
               <div className="form-group col-4">
                 <input
                   type="email"
@@ -46,8 +45,6 @@ const IniciarSesion = () => {
                   id="password"
                 />
               </div>
-              
-
               <div className='form-group'> 
               <button type="submit" className="buttonCSS">
                 Iniciar Sesion
