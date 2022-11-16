@@ -13,8 +13,10 @@ const Favoritos = () => {
     {c.sign.email?(
       <div></div>
     ):(
-      navigate("/iniciarSesion")
+      navigate("/home")
     )}
+    
+
   }
 
   useEffect(() => {

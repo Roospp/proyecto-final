@@ -1,6 +1,7 @@
 import React, { useState, useEffect,useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Context } from '../context/Context'
+import toast, { Toaster } from 'react-hot-toast';
 
 
 const IniciarSesion = () => {
@@ -15,6 +16,7 @@ const IniciarSesion = () => {
         const found = c.user?.find((ingresar) => ingresar.email === correo && ingresar.password === password);
         if(found){
             c.setSign(found)
+            toast.success('Session iniciada!')
             navigate("/home")
         }
         else{
