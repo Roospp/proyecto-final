@@ -7,7 +7,7 @@ import BuscadorYordenar from "../components/BuscarYordenar";
 
 const Tienda = () => {
 
-  const c = useContext(Context);
+  /* const c = useContext(Context);
   const navigate = useNavigate();
 
   const fetchData = async () => {
@@ -21,7 +21,7 @@ const Tienda = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
+ */
 
   return (
     <div className='container-tienda'>

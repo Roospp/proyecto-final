@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar";
 import Home from "./views/Home";
 import NotFound from "./views/NotFound";
 import Tienda from "./views/Tienda";
-import DetalleProducto from "./views/DetalleProducto";
 import Perfil from "./views/Perfil";
 import Favoritos from "./views/Favoritos";
 import Publicaciones from "./views/Publicaciones";
@@ -29,7 +28,6 @@ function App() {
           <Route path="/registrarse" element={<Registrarse/>} />
           <Route path="/perfil" element={<Perfil/>} />
           <Route path="/tienda" element={<Tienda/>} />
-          <Route path="/detalleProducto" element={<DetalleProducto/>} />
           <Route path="/favoritos" element={<Favoritos/>} />
           <Route path="/publicaciones" element={<Publicaciones/>} />
           <Route path="*" element={<NotFound/>} />

@@ -1,8 +1,8 @@
 import React, { useState, useEffect,useContext } from 'react'
-import AgregarProducto from '../components/AgregarProducto'
 import  {Context}  from '../context/Context'
 import { useNavigate } from 'react-router-dom'
 import Modal from '../components/Modal'
+import Cards from '../components/Cards'
 
 const Publicaciones = () => {
   const c = useContext(Context);
@@ -23,8 +23,10 @@ const Publicaciones = () => {
 
   return (
     <div className='publicaciones-container'>
-      <h2 className='text-publicaciones'>Mis productos</h2>
+      <div className='modal-card-publicaciones'>
       <Modal/>
+      <Cards/>
+      </div>
       </div>
   )
 }
