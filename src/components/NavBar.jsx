@@ -18,10 +18,8 @@ export default function NaBvar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="text-container ">
-          
           {c.sign.email?(
               <Nav className="text-container ">
-               
                 <NavLink to='/perfil' className="nav-link active text-nabvar">Perfil</NavLink>
                 <NavLink to='/Favoritos' className="nav-link active text-nabvar">Favoritos</NavLink>
                 <NavLink to='/publicaciones' className="nav-link active text-nabvar">Publicaciones</NavLink>
@@ -33,7 +31,7 @@ export default function NaBvar() {
               <NavLink to='/registrarse' className="nav-link active text-nabvar">Registrarse</NavLink>
             </Nav>
           )
-          }
+        }
         </Nav>
       </Navbar.Collapse>
     </Navbar>

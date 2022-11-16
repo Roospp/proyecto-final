@@ -25,7 +25,6 @@ const IniciarSesion = () => {
 
   return (
     <div className='iniciarSesion-container'>
-   
             <h2 className='text-iniciarSesion '>Iniciar Sesion</h2>
             <form className=" form-iniciarSesion" onSubmit={handlerSubmit}>
               <div className="form-group col-4">
@@ -51,8 +50,6 @@ const IniciarSesion = () => {
               </button>
               </div>
             </form>
-
-            
         </div>
   )
 }

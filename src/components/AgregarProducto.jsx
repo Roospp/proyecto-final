@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{ useContext, useState, useEffect } from "react"
+import { Context } from "../context/Context";
 
 const FormularioProducto = () => {
+    const c = useContext(Context);
+
   return (
     
     <div className='actualizar-container'>
