@@ -30,9 +30,6 @@ const ActualizarPerfil = () => {
           
     }
     
-  
-   
-    
   return (
     <div className='actualizar-container'>
 

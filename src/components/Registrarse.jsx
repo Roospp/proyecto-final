@@ -43,8 +43,6 @@ const Registrarse = () => {
                 'img':img,
             }]
         }
-  
-           
     
         setUsuariosData(data);
         
