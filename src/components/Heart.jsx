@@ -1,5 +1,6 @@
 import { useContext, useState } from "react"
 import { Context } from '../context/Context'
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Heart({ liked, foto }) {
   const c = useContext(Context);
@@ -21,6 +22,7 @@ export default function Heart({ liked, foto }) {
     setFilled(corazon)
     const agregar_foto = [...c.productsFavoritos, foto]
     c.setProductsFavoritos(agregar_foto)
+    toast.success('Se agrego a favoritos!')
   }
 
   //* funcion para quitar fotos de favoritos cuando le vuelvas a dar click al corazon y tambien para cambiar el color del corazon
@@ -34,6 +36,7 @@ export default function Heart({ liked, foto }) {
     setFilled(corazon)
     const agregar_foto = c.productsFavoritos
     c.setProductsFavoritos(agregar_foto)
+    toast.success('Se elimino de favoritos!')
   }
 
   return (

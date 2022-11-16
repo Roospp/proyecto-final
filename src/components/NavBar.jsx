@@ -4,6 +4,9 @@ import {NavLink} from "react-router-dom";
 import  logo from "../assets/img/Control.png"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Context } from '../context/Context'
+import toast, { Toaster } from 'react-hot-toast';
+
+
 
 export default function NaBvar() {
   const c = useContext(Context)
@@ -26,6 +29,7 @@ export default function NaBvar() {
                 <NavLink to='/tienda' className="nav-link active text-nabvar">Tienda</NavLink>
               </Nav>
           ):(
+              
             <Nav className="text-container ">
               <NavLink to='/iniciarSesion' className="nav-link active text-nabvar">Iniciar Sesion</NavLink>
               <NavLink to='/registrarse' className="nav-link active text-nabvar">Registrarse</NavLink>

@@ -11,6 +11,7 @@ import IniciarSesion from "./components/IniciarSesion";
 import Registrarse from "./components/Registrarse";
 import ContextProvider from "./context/Context";
 import Footer from './components/Footer';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
@@ -18,6 +19,7 @@ function App() {
  
   return (
     <div className="App">
+      <><Toaster/></>
       <ContextProvider>
       <BrowserRouter>
       <NavBar/>
