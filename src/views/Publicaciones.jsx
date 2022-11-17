@@ -14,8 +14,16 @@ const Publicaciones = () => {
     ):(
       navigate("/iniciarSesion")
     )}
-  }
 
+    let filtrarBusqueda = c.products.filter((p) => {
+      return (
+        p.email.toLowerCase().includes(c.sign.email.toLowerCase())
+      );
+    });
+
+    c.setFilterresult(filtrarBusqueda);
+  }
+  console.log(c.filterresult)
   useEffect(() => {
     fetchData();
   }, []);

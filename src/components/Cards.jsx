@@ -5,29 +5,14 @@ import Heart from "./Heart";
 
 const Cards = () => {
   const c = useContext(Context);
-
-  const fetchData = async () => {
-    const r2 = await fetch("../db/productos.json");
-    let pd = await r2.json();
-    c.setProducts(pd)
-    
-  }
-
-
-
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-
-  let data = c.products
-
-  if (c.busqueda.length) {
+  
+  let data = null
+  if((window.location.href.indexOf("/tienda") != -1) && (c.filterresult.length<=0) && (c.busqueda=='')){
+    data = c.products
+  }else{
     data = c.filterresult
   }
-
-
+console.log(data)
   const BotonDetalle = () =>{
 
   }
@@ -47,7 +32,7 @@ const Cards = () => {
             
               <h5 className='card-title card-text'>{p.nombre}</h5>
               <p className='card-text'>{p.descripcion}</p>
-              <p className='card-text'>$ {p.precio}</p>
+              <p className='card-text'>$ {p.precio.toLocaleString(navigator.language, { minimumFractionDigits: 0 })}</p>
               <div className='botones-card'>
               <Heart className='iconos' liked={p.liked} foto={p} />
               <i className="fa-regular fa-credit-card icono-pagar"></i>
