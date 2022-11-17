@@ -1,187 +1,218 @@
 [
         {
             "id": "1",
-            "nombre": "Gta",
-            "precio": "15.000",
+            "nombre": "z",
+            "precio": 15000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/441PyzDv/gta.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt@gmail.com"
         },
         {
             "id": "2",
-            "nombre": "Farcry",
-            "precio": "10.000",
+            "nombre": "A",
+            "precio": 10000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/mDBZrf9S/farcry.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "3",
             "nombre": "Watch Dog",
-            "precio": "5.000",
+            "precio": 5000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/PJfmYRgW/watch.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "4",
             "nombre": "Batt 1",
-            "precio": "17.000",
+            "precio": 17000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/mg17YM55/bf1.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "5",
             "nombre": "Doom",
-            "precio": "20.000",
+            "precio": 20000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/rmj4V9DK/doom.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "6",
             "nombre": "Cyber",
-            "precio": "25.000",
+            "precio": 25000,
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/4dstR0ND/cybarpunk.jpg"
+            "img": "https://i.postimg.cc/4dstR0ND/cybarpunk.jpg",
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "7",
             "nombre": "Dark Souls",
-            "precio": "19.000",
+            "precio": 19000,
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/8zhKw0q0/Dark.jpg"
+            "img": "https://i.postimg.cc/8zhKw0q0/Dark.jpg",
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "8",
             "nombre": "Guardianes",
-            "precio": "10.000",
+            "precio": 10000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/cJhDG817/Guardianes.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "9",
             "nombre": "Medium",
-            "precio": "5.000",
+            "precio": 5000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/0jMZSWYZ/Medium.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "10",
             "nombre": "Mortal Kombat",
-            "precio": "17.000",
+            "precio": 17000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/wvb078m7/Mortal.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "11",
             "nombre": "Prey",
-            "precio": "20.000",
+            "precio": 20000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/wMC2QXFz/Prey.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "12",
             "nombre": "Rust",
-            "precio": "25.000",
+            "precio": 25000,
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/0QNVk2rT/Rust.jpg"
-        },  {
+            "img": "https://i.postimg.cc/0QNVk2rT/Rust.jpg",
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
+        },  
+        {
             "id": "13",
             "nombre": "Gta",
-            "precio": "15.000",
+            "precio": 15000,
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/441PyzDv/gta.jpg"
+            "img": "https://i.postimg.cc/441PyzDv/gta.jpg",
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "14",
             "nombre": "Farcry",
-            "precio": "10.000",
+            "precio": 10000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/mDBZrf9S/farcry.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "15",
             "nombre": "Watch Dog",
-            "precio": "5.000",
+            "precio": 5000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/PJfmYRgW/watch.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "16",
             "nombre": "Batt 1",
-            "precio": "17.000",
+            "precio": 17000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/mg17YM55/bf1.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "17",
             "nombre": "Doom",
-            "precio": "20.000",
+            "precio": 20000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/rmj4V9DK/doom.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "18",
             "nombre": "Cyber",
-            "precio": "25.000",
+            "precio": 25000,
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/4dstR0ND/cybarpunk.jpg"
+            "img": "https://i.postimg.cc/4dstR0ND/cybarpunk.jpg",
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "19",
             "nombre": "Dark Souls",
-            "precio": "19.000",
+            "precio": 19000,
             "descripcion": "Lorem Ipsu",
-            "img": "https://i.postimg.cc/8zhKw0q0/Dark.jpg"
+            "img": "https://i.postimg.cc/8zhKw0q0/Dark.jpg",
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "20",
             "nombre": "Guardianes",
-            "precio": "10.000",
+            "precio": 10000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/cJhDG817/Guardianes.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "21",
             "nombre": "Medium",
-            "precio": "5.000",
+            "precio": 5000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/0jMZSWYZ/Medium.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "22",
             "nombre": "Mortal Kombat",
-            "precio": "17.000",
+            "precio": 17000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/wvb078m7/Mortal.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "23",
             "nombre": "Prey",
-            "precio": "20.000",
+            "precio": 20000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/wMC2QXFz/Prey.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         },
         {
             "id": "24",
             "nombre": "Rust",
-            "precio": "25.000",
+            "precio": 25000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/0QNVk2rT/Rust.jpg",
-            "liked": false
+            "liked": false,
+            "email": "Roosevelt1@gmail.com"
         }
     ]

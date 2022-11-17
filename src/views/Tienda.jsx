@@ -6,22 +6,11 @@ import BuscadorYordenar from "../components/BuscarYordenar";
 
 
 const Tienda = () => {
-
-  /* const c = useContext(Context);
-  const navigate = useNavigate();
-
-  const fetchData = async () => {
-    {c.sign.email?(
-      <div></div>
-    ):(
-      navigate("/iniciarSesion")
-    )}
-  }
-
+  const c = useContext(Context);
   useEffect(() => {
-    fetchData();
+    c.setFilterresult(c.products)
   }, []);
- */
+
 
   return (
     <div className='container-tienda'>
