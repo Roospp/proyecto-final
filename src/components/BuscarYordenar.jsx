@@ -20,6 +20,20 @@ const Buscador = () => {
       }
       
     }))
+
+    c.setFilterresult(u => [...u].sort((a, b)=>{
+      if (o=='opt1') {
+        console.log('Nombre')
+        return a.nombre > b.nombre ? 1:-1;
+      }
+
+      if (o=='opt2') {
+        console.log('PRecio')
+        return a.precio > b.precio ? 1:-1;
+      }
+      
+    }))
+
   }
 
 
