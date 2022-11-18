@@ -10,12 +10,10 @@ const Buscador = () => {
 
     c.setProducts(u => [...u].sort((a, b)=>{
       if (o=='opt1') {
-        console.log('Nombre')
         return a.nombre > b.nombre ? 1:-1;
       }
 
       if (o=='opt2') {
-        console.log('PRecio')
         return a.precio > b.precio ? 1:-1;
       }
       
@@ -23,12 +21,10 @@ const Buscador = () => {
 
     c.setFilterresult(u => [...u].sort((a, b)=>{
       if (o=='opt1') {
-        console.log('Nombre')
         return a.nombre > b.nombre ? 1:-1;
       }
 
       if (o=='opt2') {
-        console.log('PRecio')
         return a.precio > b.precio ? 1:-1;
       }
       
@@ -59,20 +55,10 @@ const Buscador = () => {
           <input type="text" className='input-search' placeholder="Buscador por nombres" onChange={filtrarProductos} value={c.busqueda} />
         </div>
       </div>
-      
-      {/* <div className='select' tabIndex='1' onChange={ordenar} id='cboordenar'>
-        <input className='selectopt input' name="test" type="radio" id="opt1" />
-        <label htmlFor="opt1" className="option">Ordenar por</label>
-        <input className="selectopt input" name="test" type="radio" id="opt2" />
-        <label htmlFor="opt2" className="option">Nombre</label>
-        <input className="selectopt input" name="test" type="radio" id="opt3" />
-        <label htmlFor="opt3" className="option">Precio</label>
-        
-      </div> */}
-        <select className='select' name="cboordenar" id="cboordenar" onChange={ordenar}>
-          <option value="volvo" id="opt0">Ordernar por...</option>
-          <option value="volvo" id="opt1">Nombre</option>
-          <option value="saab" id="opt2">Precio</option>
+        <select className='select  ' name="cboordenar" id="cboordenar" onChange={ordenar}>
+          <option className='select-option' value="volvo" id="opt0">Ordernar por...</option>
+          <option className='select-option' value="volvo" id="opt1">Nombre</option>
+          <option className='select-option' value="saab" id="opt2">Precio</option>
         </select>
     </div>
   );

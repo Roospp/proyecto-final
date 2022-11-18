@@ -28,8 +28,9 @@ code {
   background-size: cover;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  grid-template-rows: 1fr 14fr 1fr;
+  flex-direction: column;
   backdrop-filter: blur(10px) !important;
   background-color: rgba(255, 255, 255, 0) !important;
   

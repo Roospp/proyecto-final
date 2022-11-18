@@ -1,4 +1,4 @@
-import React, { useState ,useContext,useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./views/Home";
@@ -11,7 +11,7 @@ import IniciarSesion from "./components/IniciarSesion";
 import Registrarse from "./components/Registrarse";
 import ContextProvider from "./context/Context";
 import Footer from './components/Footer';
-import toast, { Toaster } from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 
 
 

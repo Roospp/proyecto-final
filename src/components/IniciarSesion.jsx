@@ -1,7 +1,7 @@
-import React, { useState, useEffect,useContext } from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Context } from '../context/Context'
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 
 const IniciarSesion = () => {

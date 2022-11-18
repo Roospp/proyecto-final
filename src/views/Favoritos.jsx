@@ -2,6 +2,7 @@ import React,{ useContext, useState, useEffect } from "react"
 import { Context } from "../context/Context";
 import Heart from "../components/Heart";
 import { useNavigate } from 'react-router-dom'
+import ModalDetalleProducto from '../components/ModalDetalleProducto'
 
 const Favoritos = () => {
   const c = useContext(Context);
@@ -42,7 +43,7 @@ const Favoritos = () => {
               <div className='botones-card'>
               <Heart className='iconos' liked={p.liked} foto={p} />
               <i className="fa-regular fa-credit-card icono-pagar"></i>
-              <i className="fa-solid fa-circle-info icono-Info"></i>
+              <ModalDetalleProducto p={p}/>
               </div>
             </div>
           </div>

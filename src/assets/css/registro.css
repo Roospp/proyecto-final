@@ -1,6 +1,7 @@
 .registro-container {
     width: 100%;
-
+    backdrop-filter: blur(10px) !important;
+    background-color: rgba(8, 8, 8, 0.651) !important;
 }
 
 

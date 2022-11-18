@@ -1,20 +1,15 @@
 import { useContext, useState } from "react"
 import { Context } from '../context/Context'
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 export default function Heart({ liked, foto }) {
   const c = useContext(Context);
-  //* llamndo los valores del contexto y importando el valoror ContextApi 
   
-  //* creando un estado para luego cambiar de manera reactiva el color del corazon
   const [filled, setFilled] = useState(liked)
-  // console.log(filled)
 
-  //* destructurando los valores del contexto para utilizarlos de manera más directa
  
   
 
-  //* funcion para agregar fotos a favoritos cuando se le de click al corazon y tambien para cambiar el color del corazon
   const agregarFavoritos = (foto) =>{
     let {id} = foto
     const indice = c.products.findIndex(elemento => elemento.id === id)
@@ -25,7 +20,6 @@ export default function Heart({ liked, foto }) {
     toast.success('Se agrego a favoritos!')
   }
 
-  //* funcion para quitar fotos de favoritos cuando le vuelvas a dar click al corazon y tambien para cambiar el color del corazon
 
   const quitarFavoritos = (foto) =>{
     const {liked, id} = foto
