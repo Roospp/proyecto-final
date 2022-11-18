@@ -1,7 +1,6 @@
 .publicaciones-container {
     width: 100%;
-    display: flex;
-
+    gap: 20px;
 }
 
 .text-publicaciones {

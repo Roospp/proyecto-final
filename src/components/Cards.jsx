@@ -1,21 +1,19 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { Context } from '../context/Context'
 import Heart from "./Heart";
+import ModalDetalleProducto from './ModalDetalleProducto'
 
 
 const Cards = () => {
   const c = useContext(Context);
   
-  let data = null
+  let data =null;
   if((window.location.href.indexOf("/tienda") != -1) && (c.filterresult.length<=0) && (c.busqueda=='')){
     data = c.products
   }else{
     data = c.filterresult
   }
-console.log(data)
-  const BotonDetalle = () =>{
 
-  }
   
 
   return (
@@ -36,13 +34,15 @@ console.log(data)
               <div className='botones-card'>
               <Heart className='iconos' liked={p.liked} foto={p} />
               <i className="fa-regular fa-credit-card icono-pagar"></i>
-              <i className="fa-solid fa-circle-info icono-Info" onClick={BotonDetalle}></i>
+              
+            <ModalDetalleProducto p={p} />
+              
               </div>
      
             </div>
           </div>
         )
-
+        
         )
       }
 

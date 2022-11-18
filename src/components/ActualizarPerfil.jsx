@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Context } from '../context/Context'
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 
 const ActualizarPerfil = () => {
@@ -36,7 +36,7 @@ const ActualizarPerfil = () => {
     }
     
   return (
-    <div className='actualizar-container'>
+    <div>
     <form className='form-actualizar' onSubmit={handlerActualizar} >
     <div className='form-group col-10'> 
         <label htmlFor='full_name_id' className='control-label '></label>

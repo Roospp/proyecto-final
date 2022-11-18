@@ -33,26 +33,25 @@
 
 
 
-.button-interno-modal {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 10px 15px;
-    font-size: 10px;
-    cursor: pointer;
-    text-align: center;	
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #44065B;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  .button-interno-modal:hover {background-color: #3e8e41}
-  
-  .button-interno-modal:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+.modal-add-producto {
+  color: white;
+  backdrop-filter: blur(10px) !important;
+  background-color: rgba(8, 8, 8, 0.651) !important;
+}
+
+.foto-dt-modal {
+  width: 200px;
+}
+
+.detalle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-icon-modal {
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+}

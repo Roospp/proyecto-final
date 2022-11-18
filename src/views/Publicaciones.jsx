@@ -23,7 +23,6 @@ const Publicaciones = () => {
 
     c.setFilterresult(filtrarBusqueda);
   }
-  console.log(c.filterresult)
   useEffect(() => {
     fetchData();
   }, []);
@@ -31,8 +30,9 @@ const Publicaciones = () => {
 
   return (
     <div className='publicaciones-container'>
-      <div className='modal-card-publicaciones'>
       <Modal/>
+      <div className='modal-card-publicaciones'>
+      
       <Cards/>
       </div>
       </div>

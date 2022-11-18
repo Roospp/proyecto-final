@@ -1,7 +1,7 @@
 [
         {
             "id": "1",
-            "nombre": "z",
+            "nombre": "Gta",
             "precio": 15000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/441PyzDv/gta.jpg",
@@ -19,8 +19,8 @@
         },
         {
             "id": "3",
-            "nombre": "Watch Dog",
-            "precio": 5000,
+            "nombre": "Z",
+            "precio": 10000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/PJfmYRgW/watch.jpg",
             "liked": false,
@@ -74,7 +74,7 @@
         {
             "id": "9",
             "nombre": "Medium",
-            "precio": 5000,
+            "precio": 10000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/0jMZSWYZ/Medium.jpg",
             "liked": false,
@@ -128,7 +128,7 @@
         {
             "id": "15",
             "nombre": "Watch Dog",
-            "precio": 5000,
+            "precio": 10000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/PJfmYRgW/watch.jpg",
             "liked": false,
@@ -182,7 +182,7 @@
         {
             "id": "21",
             "nombre": "Medium",
-            "precio": 5000,
+            "precio": 10000,
             "descripcion": "Lorem Ipsu",
             "img": "https://i.postimg.cc/0jMZSWYZ/Medium.jpg",
             "liked": false,
