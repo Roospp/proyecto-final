@@ -36,4 +36,11 @@ code {
   
 }
 
+@media  (max-width: 575px){
+  .App {
+    width: 100%;
+    justify-content: space-between;
+    overflow-y: scroll;
 
+  }
+}

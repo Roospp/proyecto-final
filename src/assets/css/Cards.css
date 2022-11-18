@@ -24,3 +24,22 @@
 .card-text {
   margin-top: 20px;
 }
+
+
+@media  (max-width: 575px){
+  .container-cards{
+      height: 460px !important;
+  }
+
+  .card{
+    width: 150px;
+
+  }
+
+  .foto-card {
+    width: 100px;
+  }
+
+  
+
+}
