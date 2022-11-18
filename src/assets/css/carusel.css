@@ -8,3 +8,14 @@
 .fotos-carusel {
     height: 650px;
 }
+
+
+
+
+@media  (max-width: 575px){
+  
+  
+    .fotos-carusel{
+        height: 260px !important;
+    }
+  }

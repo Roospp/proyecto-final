@@ -16,10 +16,7 @@ function UncontrolledExample() {
           src={foto1}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>Lorem ipsum </h3>
-          <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.</p>
-        </Carousel.Caption>
+        
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -27,10 +24,7 @@ function UncontrolledExample() {
           src={foto2}
           alt="Second slide"
         />
-        <Carousel.Caption>
-          <h3>Lorem ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+       
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -39,12 +33,7 @@ function UncontrolledExample() {
           alt="Third slide"
         />
 
-        <Carousel.Caption>
-          <h3>Lorem ipsum</h3>
-          <p>
-          Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-          </p>
-        </Carousel.Caption>
+       
       </Carousel.Item>
       </Carousel>
   

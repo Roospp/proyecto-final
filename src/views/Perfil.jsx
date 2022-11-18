@@ -21,7 +21,6 @@ const Perfil = () => {
 
   
   return (
-    <div className='perfil-container'>
       <div className='container-act-perfil'>
       <img className='foto-perfil' src={c.sign.img} alt="" />
       <div className='nombre-usuario'>
@@ -32,7 +31,6 @@ const Perfil = () => {
 <div className='actualizar-container'>
       <ActualizarPerfil />
       </div>
-    </div>
     </div>
   )
 }

@@ -91,3 +91,16 @@ margin-right: 90px;
   .icon-color {
     color: white;
   }
+
+
+
+  @media  (max-width: 575px) {
+    .container-buscador-option {
+      margin-left: 10px;
+      margin-right: 10px;
+
+    }
+    .input-search:focus {
+   width: 100px;
+    }
+  }

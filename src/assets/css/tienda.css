@@ -4,3 +4,10 @@
 }
 
 
+@media  (max-width: 575px){
+  
+  
+    .container-tienda{
+        height: 460px !important;
+    }
+  }
