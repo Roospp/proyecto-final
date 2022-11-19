@@ -13,11 +13,11 @@ export default function ContextProvider({children}){
     
     const fetchData = async () => {
         const response = await fetch("../db/usuarios.json");
-        let u = await response.json();
+        let u = await response.json()?? [];
         setUser(u)
 
         const r2 = await fetch("../db/productos.json");
-        let pd = await r2.json();
+        let pd = await r2.json()?? [];
         setProducts(pd)
     }
 
