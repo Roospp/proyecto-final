@@ -13,14 +13,14 @@ const IniciarSesion = () => {
         e.preventDefault();
         const correo = e.target.email.value;
         const password = e.target.password.value;
-        const found = c.user?.find((ingresar) => ingresar.email === correo && ingresar.password === password);
+        const found = c.user?.find((ingresar) => ingresar.email.toLowerCase() === correo.toLowerCase() && ingresar.password.toLowerCase() === password.toLowerCase());
         if(found){
             c.setSign(found)
             toast.success('Session iniciada!')
             navigate("/home")
         }
         else{
-            alert('Credenciales invalidas')
+          toast.error('Credenciales invalidas')
         }
     }
 
